@@ -1,0 +1,69 @@
+header {
+  background-color: #f4f2f2;
+  padding: 5px 20px 10px 20px;
+  margin-bottom: 10px;
+}
+form {
+  display: block;
+  margin: auto;
+}
+button {
+  display: block;
+  margin: auto;
+}
+button:hover {
+  border: solid 3px gray;
+}
+
+.scale-type {
+  text-decoration: none;
+  color: black;
+}
+.scale-type:hover {
+  color: black;
+  font-weight: bold;
+}
+.container {
+  max-width: 40%;
+  border: solid 1px black;
+  display: block;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: "JetBrains Mono", monospace;
+}
+.tofavorite {
+  font-size: 12px;
+}
+.tofavorite:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.icon {
+  color: gray;
+}
+.col-4 {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  color: black;
+  padding-top: 20px;
+}
+
+.col-2 {
+  display: block;
+  margin: 0 auto;
+  border: solid 1px black;
+  padding: 30px 5px;
+  background-color: #f4f2f2;
+}
+.col-2:hover {
+  border: solid 3px gray;
+}
+.weekcast {
+  text-align: center;
+}
+#current-location {
+  display: inline;
+  margin-top: 5px;
+  padding: 1px 85px;
+}

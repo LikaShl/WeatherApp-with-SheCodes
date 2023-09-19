@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e240179e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>
+          Favorite cities: <a href="">Schorndorf</a> <a href="">Kharkiv</a>
+          <a href="">Warshaw</a>
+        </p>
+        <form id="search-city">
+          <input type="text" id="search-input" placeholder="Enter the city" />
+          <input type="submit" value="Search" />
+        </form>
+        <button id="current-location">Current location</button>
+      </header>
+      <div class="tofavorite">
+        <p>Add to favorite</p>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <h1 id="new-city"></h1>
+          <h2>
+            <span id="current-temp"></span>
+          </h2>
+          <div id="current-humidity"></div>
+          <div id="wind-speed"></div>
+        </div>
+        <div class="col-5">
+          <p id="curent-time"></p>
+          <div class="weather">
+            <div id="icon-weather"></div>
+            <div id="current-weather"></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-2">
+          <p class="weekcast">
+            Mon<br />
+            21/08 <br />
+            <i class="fa-regular fa-sun icon"></i>
+            <br />
+            34°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekcast">
+            Tue <br />
+            22/08
+            <br />
+            <i class="fa-solid fa-cloud icon"></i>
+            <br />
+            32°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekcast">
+            Wed <br />
+            23/08
+            <br />
+            <i class="fa-solid fa-cloud-bolt icon"></i>
+            <br />
+            30°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekcast">
+            Thur <br />
+            24/08
+            <br />
+            <i class="fa-solid fa-cloud-sun icon"></i>
+            <br />
+            22°
+          </p>
+        </div>
+        <div class="col-2">
+          <p class="weekcast">
+            Fri <br />
+            25/08
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy icon"></i>
+            <br />
+            20°
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
