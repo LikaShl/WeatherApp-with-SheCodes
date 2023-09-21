@@ -14,7 +14,11 @@ button {
 button:hover {
   border: solid 3px gray;
 }
-
+footer {
+  font-size: x-small;
+  display: block;
+  margin: 30px auto;
+}
 .scale-type {
   text-decoration: none;
   color: black;
