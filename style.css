@@ -17,7 +17,7 @@ button:hover {
 footer {
   font-size: x-small;
   display: block;
-  margin: 30px auto;
+  margin: auto;
 }
 .scale-type {
   text-decoration: none;
