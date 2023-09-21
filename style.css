@@ -16,8 +16,7 @@ button:hover {
 }
 footer {
   font-size: x-small;
-  display: block;
-  margin: auto;
+  text-align: center;
 }
 .scale-type {
   text-decoration: none;
@@ -31,7 +30,7 @@ footer {
   max-width: 40%;
   border: solid 1px black;
   display: block;
-  margin: 30px auto;
+  margin: 30px auto 5px auto;
   padding: 20px;
   font-family: "JetBrains Mono", monospace;
 }
