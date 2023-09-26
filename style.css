@@ -6,13 +6,18 @@ header {
 form {
   display: block;
   margin: auto;
+  width: 80%;
 }
 button {
   display: block;
   margin: auto;
+  width: 80%;
 }
 button:hover {
   border: solid 3px gray;
+}
+ul {
+  list-style: none;
 }
 footer {
   font-size: x-small;
@@ -26,7 +31,7 @@ footer {
   color: black;
   font-weight: bold;
 }
-.container {
+.app {
   max-width: 40%;
   border: solid 1px black;
   display: block;
