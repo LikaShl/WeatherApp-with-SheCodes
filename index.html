@@ -25,87 +25,74 @@
   </head>
   <body>
     <div class="container">
+      <div class="app">
       <header>
-        <p>
-          Favorite cities: <a href="">Schorndorf</a> <a href="">Kharkiv</a>
-          <a href="">Warshaw</a>
-        </p>
         <form id="search-city">
           <input type="text" id="search-input" placeholder="Enter the city" />
           <input type="submit" value="Search" />
         </form>
         <button id="current-location">Current location</button>
       </header>
-      <div class="tofavorite">
-        <p>Add to favorite</p>
-      </div>
       <div class="row">
         <div class="col-7">
-          <h1 id="new-city"></h1>
-          <h2>
-            <span id="current-temp"></span>
-          </h2>
-          <div id="current-humidity"></div>
-          <div id="wind-speed"></div>
+          <ul>
+          <li id="new-city"></li>
+          <li id="current-temp"></li>
+          <li> id="current-humidity"></li>
+          <li> id="wind-speed"></li>
+          </ul>
         </div>
         <div class="col-5">
-          <p id="curent-time"></p>
-          <div class="weather">
-            <div id="icon-weather"></div>
-            <div id="current-weather"></div>
+          <ul>
+          <li id="curent-time"></li>
+          <li class="weather">
+          <li id="icon-weather"></li>
+          <li id="current-weather"></li>
+          </ul>
           </div>
         </div>
       </div>
       <hr />
       <div class="row">
         <div class="col-2">
-          <p class="weekcast">
-            Mon<br />
-            21/08 <br />
-            <i class="fa-regular fa-sun icon"></i>
-            <br />
-            34°
-          </p>
+          <ul class="weekcast">
+            <li>Mon</li>
+            <li>21/08</li>
+            <li><i class="fa-regular fa-sun icon"></i></li>
+            <li>34°</li>
+          </ul>
         </div>
         <div class="col-2">
-          <p class="weekcast">
-            Tue <br />
-            22/08
-            <br />
-            <i class="fa-solid fa-cloud icon"></i>
-            <br />
-            32°
-          </p>
+          <ul class="weekcast">
+            <li>Tue</li>
+            <li>22/08</li>
+            <li><i class="fa-solid fa-cloud icon"></i></li>     
+            <li>32°</li>       
+          </ul>
         </div>
         <div class="col-2">
-          <p class="weekcast">
-            Wed <br />
-            23/08
-            <br />
-            <i class="fa-solid fa-cloud-bolt icon"></i>
-            <br />
-            30°
-          </p>
+          <ul class="weekcast">
+            <li>Wed</li>
+            <li>23/08</li>
+            <li><i class="fa-solid fa-cloud-bolt icon"></i></li>          
+            <li>30°</li>     
+          </ul>
         </div>
         <div class="col-2">
-          <p class="weekcast">
-            Thur <br />
-            24/08
-            <br />
-            <i class="fa-solid fa-cloud-sun icon"></i>
-            <br />
-            22°
-          </p>
+          <ul class="weekcast">
+            <li>Thur</li>
+            <li>24/08</li>
+            <li><i class="fa-solid fa-cloud-sun icon"></i></li> 
+            <li>22°</li>   
+          </ul>
         </div>
         <div class="col-2">
-          <p class="weekcast">
-            Fri <br />
-            25/08
-            <br />
-            <i class="fa-solid fa-cloud-showers-heavy icon"></i>
-            <br />
-            20°
-          </p>
+          <ul class="weekcast">
+            <li>Fri</li>
+            <li>25/08</li>
+            <li><i class="fa-solid fa-cloud-showers-heavy icon"></i></li> 
+            <li>20°</li> 
+          </ul>
         </div>
       </div>
     </div>
@@ -115,6 +102,7 @@
       >
       by Anzhelika Shleiko
     </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
