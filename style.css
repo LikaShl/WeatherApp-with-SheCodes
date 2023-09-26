@@ -6,12 +6,10 @@ header {
 form {
   display: block;
   margin: auto;
-  width: 80%;
 }
 button {
   display: block;
   margin: auto;
-  width: 80%;
 }
 button:hover {
   border: solid 3px gray;
