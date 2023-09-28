@@ -25,83 +25,86 @@
   </head>
   <body>
     <div class="container">
-    <div class="app">
-      <header>
-        <form id="search-city">
-          <input type="text" id="search-input" placeholder="Enter the city" />
-          <input type="submit" value="Search" />
+      <div class="app">
+        <header>
+          <form id="search-city">
+            <input type="text" id="search-input" placeholder="Enter the city" />
+            <input type="submit" value="Search" />
           </form>
           <button id="current-location">Current location</button>
-      </header>
-      <div class="row">
-        <div class="col-7">
-          <ul>
-          <li id="new-city"></li>
-          <li id="current-temp"></li>
-          <li id="current-humidity"></li>
-          <li id="wind-speed"></li>
-          </ul>
-        </div>
-        <div class="col-5">
-          <ul>
+        </header>
+        <h1 id="new-city">Kharkiv</h1>
+        <ul>
           <li id="curent-time"></li>
-          <li class="weather">
-          <li id="icon-weather"></li>
-          <li id="current-weather"></li>
-          </ul>
+          <li id="current-weather">cloud</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <p id="icon-weather">
+                <img src="https://openweathermap.org/img/wn/01d.png" />
+              </p>
+              <strong id="current-temp">22</strong
+              ><span class="units"> °C</span>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="current-humidity">Humidity: 20%</li>
+              <li id="wind-speed">Windspeed: 2 m/sec</li>
+            </ul>
           </div>
         </div>
-      <hr />
-      <div class="row">
-        <div class="col-2">
-          <ul class="weekcast">
-            <li>Mon</li>
-            <li>21/08</li>
-            <li><i class="fa-regular fa-sun icon"></i></li>
-            <li>34°</li>
-          </ul>
-        </div>
-        <div class="col-2">
-          <ul class="weekcast">
-            <li>Tue</li>
-            <li>22/08</li>
-            <li><i class="fa-solid fa-cloud icon"></i></li>     
-            <li>32°</li>       
-          </ul>
-        </div>
-        <div class="col-2">
-          <ul class="weekcast">
-            <li>Wed</li>
-            <li>23/08</li>
-            <li><i class="fa-solid fa-cloud-bolt icon"></i></li>          
-            <li>30°</li>     
-          </ul>
-        </div>
-        <div class="col-2">
-          <ul class="weekcast">
-            <li>Thur</li>
-            <li>24/08</li>
-            <li><i class="fa-solid fa-cloud-sun icon"></i></li> 
-            <li>22°</li>   
-          </ul>
-        </div>
-        <div class="col-2">
-          <ul class="weekcast">
-            <li>Fri</li>
-            <li>25/08</li>
-            <li><i class="fa-solid fa-cloud-showers-heavy icon"></i></li> 
-            <li>20°</li> 
-          </ul>
+        <hr />
+        <div class="row">
+          <div class="col-2">
+            <ul class="weekcast">
+              <li>Mon</li>
+              <li>21/08</li>
+              <li><i class="fa-regular fa-sun icon"></i></li>
+              <li>34°</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="weekcast">
+              <li>Tue</li>
+              <li>22/08</li>
+              <li><i class="fa-solid fa-cloud icon"></i></li>
+              <li>32°</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="weekcast">
+              <li>Wed</li>
+              <li>23/08</li>
+              <li><i class="fa-solid fa-cloud-bolt icon"></i></li>
+              <li>30°</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="weekcast">
+              <li>Thur</li>
+              <li>24/08</li>
+              <li><i class="fa-solid fa-cloud-sun icon"></i></li>
+              <li>22°</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="weekcast">
+              <li>Fri</li>
+              <li>25/08</li>
+              <li><i class="fa-solid fa-cloud-showers-heavy icon"></i></li>
+              <li>20°</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    <footer>
-      <a href="https://github.com/LikaShl/WeatherApp-with-SheCodes"
-        >Open-source code</a
-      >
-      by Anzhelika Shleiko
-    </footer>
+      <footer>
+        <a href="https://github.com/LikaShl/WeatherApp-with-SheCodes"
+          >Open-source code</a
+        >
+        by Anzhelika Shleiko
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>

@@ -3,7 +3,7 @@ function showWeather(response) {
   currentPlace.innerHTML = response.data.name;
   let currentTemp = document.querySelector("#current-temp");
   let temperature = Math.round(response.data.main.temp);
-  currentTemp.innerHTML = `${temperature} ℃`;
+  currentTemp.innerHTML = `${temperature}`;
   let currentWeather = document.querySelector("#current-weather");
   currentWeather.innerHTML = response.data.weather[0].description;
   let iconWeather = document.querySelector("#icon-weather");
@@ -12,7 +12,7 @@ function showWeather(response) {
   iconWeather.innerHTML = ""; // Clear any existing content
   iconWeather.appendChild(img);
   let currentHumidity = document.querySelector("#current-humidity");
-  currentHumidity.innerHTML = `Humidity: ${response.data.main.humidity} %`;
+  currentHumidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let currentWindSpeed = document.querySelector("#wind-speed");
   let wind = Math.round(response.data.wind.speed);
   currentWindSpeed.innerHTML = `Wind speed: ${wind} m/sec`;

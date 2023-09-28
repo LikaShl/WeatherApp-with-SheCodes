@@ -6,11 +6,11 @@ header {
 form {
   display: block;
   margin: auto;
-  width: fit-content;
   box-sizing: border-box;
-}
-button {
   width: fit-content;
+}
+
+button {
   display: block;
   margin: auto;
   box-sizing: border-box;
@@ -29,29 +29,15 @@ footer {
   font-size: x-small;
   text-align: center;
 }
-.scale-type {
-  text-decoration: none;
-  color: black;
-}
-.scale-type:hover {
-  color: black;
-  font-weight: bold;
-}
 .app {
-  max-width: 40%;
+  max-width: 500px;
   border: solid 1px black;
   display: block;
   margin: 30px auto 5px auto;
   padding: 20px;
   font-family: "JetBrains Mono", monospace;
 }
-.tofavorite {
-  font-size: 12px;
-}
-.tofavorite:hover {
-  cursor: pointer;
-  font-weight: bold;
-}
+
 .icon {
   color: gray;
 }
@@ -62,7 +48,6 @@ footer {
   color: black;
   padding-top: 20px;
 }
-
 .col-2 {
   display: block;
   margin: 0 auto;
@@ -75,4 +60,7 @@ footer {
 }
 .weekcast {
   text-align: center;
+}
+#current-temp {
+  font-size: 34px;
 }
