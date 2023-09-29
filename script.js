@@ -17,6 +17,11 @@ function showWeather(response) {
   let wind = Math.round(response.data.wind.speed);
   currentWindSpeed.innerHTML = `Wind speed: ${wind} m/sec`;
 }
+function start(Kharkiv) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kharkiv&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
+  axios.get(apiUrl).then(showWeather);
+}
+start();
 
 function findPosition(position) {
   let lat = position.coords.latitude;
@@ -58,8 +63,14 @@ function formatDate() {
   ];
   let day = days[now.getDay()];
   let hour = now.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
   let minute = now.getMinutes();
-  let today = `${day}, ${hour}:${minute}`;
+  if (minute < 10) {
+    hour = `0${minute}`;
+  }
+  let today = `Last updated: ${day}, ${hour}:${minute}`;
   return today;
 }
 

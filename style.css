@@ -25,6 +25,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 footer {
   font-size: x-small;
   text-align: center;
