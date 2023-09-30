@@ -7,17 +7,18 @@ function showWeather(response) {
   let currentWeather = document.querySelector("#current-weather");
   currentWeather.innerHTML = response.data.weather[0].description;
   let iconWeather = document.querySelector("#icon-weather");
-  let img = document.createElement("img");
-  img.src = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
-  iconWeather.innerHTML = ""; // Clear any existing content
-  iconWeather.appendChild(img);
+  iconWeather.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+  );
+  iconWeather.setAttribute("alt", response.data.weather[0].description);
   let currentHumidity = document.querySelector("#current-humidity");
   currentHumidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let currentWindSpeed = document.querySelector("#wind-speed");
   let wind = Math.round(response.data.wind.speed);
   currentWindSpeed.innerHTML = `Wind speed: ${wind} m/sec`;
 }
-function start(Kharkiv) {
+function start() {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kharkiv&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
