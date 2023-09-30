@@ -18,11 +18,6 @@ function showWeather(response) {
   let wind = Math.round(response.data.wind.speed);
   currentWindSpeed.innerHTML = `Wind speed: ${wind} m/sec`;
 }
-function start() {
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kharkiv&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
-  axios.get(apiUrl).then(showWeather);
-}
-start();
 
 function findPosition(position) {
   let lat = position.coords.latitude;
@@ -37,19 +32,19 @@ function getLocation(event) {
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getLocation);
 
-function showCity(event) {
-  event.preventDefault();
-  let city = document.querySelector("#search-input").value;
-  searchCity(city);
-}
-
-let searchingForm = document.querySelector("#search-city");
-searchingForm.addEventListener("submit", showCity);
-
 function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
+
+function showCity(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-input").value;
+  searchCity(cityInput);
+}
+
+let searchingForm = document.querySelector("#search-city");
+searchingForm.addEventListener("submit", showCity);
 
 let now = new Date();
 function formatDate() {
@@ -77,3 +72,5 @@ function formatDate() {
 
 let showTime = document.querySelector("#curent-time");
 showTime.innerHTML = formatDate();
+
+searchCity("Kharkiv");
