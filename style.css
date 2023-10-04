@@ -67,16 +67,23 @@ footer {
 .col-2 {
   display: block;
   margin: 0 auto;
-  border: solid 1px black;
+  border: solid 1px gray;
   padding: 30px 5px;
   background-color: #f4f2f2;
 }
+
 .col-2:hover {
-  border: solid 3px gray;
+  border: solid 1px gray;
 }
 
 .weekcast {
   text-align: center;
+}
+.forecast-temperature-max {
+  color: black;
+}
+.forecast-temperature-min {
+  color: darkgray;
 }
 #current-temp {
   font-size: 34px;
