@@ -131,22 +131,6 @@ function formatDate() {
   return today;
 }
 
-function convertToFarenheit(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#current-temp");
-  showCelsiusTemp.classList.remove("active");
-  showFarenheitTemp.classList.add("active");
-  let farenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  tempElement.innerHTML = Math.round(farenheitTemp);
-}
-function convertToCelsius(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#current-temp");
-  showFarenheitTemp.classList.remove("active");
-  showCelsiusTemp.classList.add("active");
-  tempElement.innerHTML = Math.round(celsiusTemp);
-}
-
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getLocation);
 
@@ -155,13 +139,5 @@ searchingForm.addEventListener("submit", showCity);
 
 let showTime = document.querySelector("#curent-time");
 showTime.innerHTML = formatDate();
-
-let celsiusTemp = null;
-
-let showFarenheitTemp = document.querySelector("#farenheit-temp");
-showFarenheitTemp.addEventListener("click", convertToFarenheit);
-
-let showCelsiusTemp = document.querySelector("#celsius-temp");
-showCelsiusTemp.addEventListener("click", convertToCelsius);
 
 searchCity("Kharkiv");
